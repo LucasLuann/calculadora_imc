@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Home(),
-  ));
+  runApp(
+    MaterialApp(
+      home: Home(),
+    ),
+  );
 }
 
 class Home extends StatefulWidget {
@@ -74,6 +76,7 @@ class _HomeState extends State<Home> {
                   labelStyle: TextStyle(color: Colors.blue)),
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.blue, fontSize: 25.0),
+              controller: pesoController,
             ),
             TextField(
               keyboardType: TextInputType.number,
@@ -82,6 +85,7 @@ class _HomeState extends State<Home> {
                   labelStyle: TextStyle(color: Colors.blue)),
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.blue, fontSize: 25.0),
+              controller: alturaController,
             ),
             Padding(
               padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
